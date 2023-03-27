@@ -1,0 +1,28 @@
+2 questão : 
+
+def pertence_fibonacci(num):
+    a, b = 0, 1
+    while b < num:
+        a, b = b, a + b
+    if b == num:
+        return True
+    else:
+        return False
+
+num = int(input("Digite um número: "))
+if pertence_fibonacci(num):
+    print(num, "pertence à sequência de Fibonacci.")
+else:
+    print(num, "não pertence à sequência de Fibonacci.")
+
+
+5 questão : 
+
+string = input("Digite uma string: ")
+
+string_invertida = ""
+for i in range(len(string)-1, -1, -1):
+    string_invertida += string[i]
+
+print("String original:", string)
+print("String invertida:", string_invertida)
